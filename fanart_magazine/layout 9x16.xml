@@ -1,0 +1,243 @@
+<layout width="768" height="1366" font="fonts/Geforce Light.ttf" loadFontSize="36" fontColor="ffffff">
+  <sound type="load" src="sounds/load.wav"/>
+  <sound type="unload" src="sounds/unload.wav"/>
+  <sound type="highlight" src="sounds/highlight.wav"/>
+  <sound type="select" src="sounds/select.wav"/>
+
+  <!-- selection wheel -->
+  <menu type="custom" imageType="logo" orientation="vertical" scrollTime=".30"  minScrollTime=".06" scrollAcceleration=".04">
+    <itemDefaults spacing="2" y="760" x="center" yOrigin="center" xOrigin="center" xOffset="200" fontSize="35" width="200" maxHeight="120" layer="18"/>
+    <item yOffset="-400" alpha="0"/>
+    <item yOffset="-320">
+	  <onMenuExit>
+        <set duration="0.1"><animate type="alpha" to="0"/></set>
+      </onMenuExit>
+      <onMenuIdle menuIndex="i">
+        <set duration="1"><animate type="nop"/></set>
+        <set duration=".25"><animate type="alpha" to=".3"/></set>
+      </onMenuIdle>
+      <onMenuScroll>
+        <set duration=".1"><animate type="alpha" to="1"/></set>
+      </onMenuScroll>
+	</item>
+    <item yOffset="-240">
+      <onMenuExit>
+        <set duration="0.1"><animate type="alpha" to="0"/></set>
+      </onMenuExit>
+      <onMenuIdle menuIndex="i">
+        <set duration="1"><animate type="nop"/></set>
+        <set duration=".25"><animate type="alpha" to=".3"/></set>
+      </onMenuIdle>
+      <onMenuScroll>
+        <set duration=".1"><animate type="alpha" to="1"/></set>
+      </onMenuScroll>	  
+	</item>
+    <item yOffset="-160">
+      <onMenuExit>
+        <set duration="0.1"><animate type="alpha" to="0"/></set>
+      </onMenuExit>
+      <onMenuIdle menuIndex="i">
+        <set duration="1"><animate type="nop"/></set>
+        <set duration=".25"><animate type="alpha" to=".3"/></set>
+      </onMenuIdle>
+      <onMenuScroll>
+        <set duration=".1"><animate type="alpha" to="1"/></set>
+      </onMenuScroll>	  
+	</item>
+    <item yOffset="-80">
+      <onMenuExit>
+        <set duration="0.1"><animate type="alpha" to="0"/></set>
+      </onMenuExit>
+      <onMenuIdle menuIndex="i">
+        <set duration="1"><animate type="nop"/></set>
+        <set duration=".25"><animate type="alpha" to=".3"/></set>
+      </onMenuIdle>
+      <onMenuScroll>
+        <set duration=".1"><animate type="alpha" to="1"/></set>
+      </onMenuScroll>	  
+	</item>
+    <item width="300" maxHeight="200" alpha="1" layer="19" selected="true">
+      <onMenuExit>
+        <set duration="0.1"><animate type="alpha" to="0"/></set>
+      </onMenuExit>
+    </item>      
+    <item yOffset="80">
+      <onMenuExit>
+        <set duration="0.1"><animate type="alpha" to="0"/></set>
+      </onMenuExit>
+      <onMenuIdle menuIndex="i">
+        <set duration="1"><animate type="nop"/></set>
+        <set duration=".25"><animate type="alpha" to=".3"/></set>
+      </onMenuIdle>
+      <onMenuScroll>
+        <set duration=".1"><animate type="alpha" to="1"/></set>
+      </onMenuScroll>	  
+	</item>
+    <item yOffset="160">
+      <onMenuExit>
+        <set duration="0.1"><animate type="alpha" to="0"/></set>
+      </onMenuExit>
+      <onMenuIdle menuIndex="i">
+        <set duration="1"><animate type="nop"/></set>
+        <set duration=".25"><animate type="alpha" to=".3"/></set>
+      </onMenuIdle>
+      <onMenuScroll>
+        <set duration=".1"><animate type="alpha" to="1"/></set>
+      </onMenuScroll>	  
+	</item>
+    <item yOffset="240">
+      <onMenuExit>
+        <set duration="0.1"><animate type="alpha" to="0"/></set>
+      </onMenuExit>
+      <onMenuIdle menuIndex="i">
+        <set duration="1"><animate type="nop"/></set>
+        <set duration=".25"><animate type="alpha" to=".3"/></set>
+      </onMenuIdle>
+      <onMenuScroll>
+        <set duration=".1"><animate type="alpha" to="1"/></set>
+      </onMenuScroll>	  
+	</item>
+    <item yOffset="320">
+      <onMenuExit>
+        <set duration="0.1"><animate type="alpha" to="0"/></set>
+      </onMenuExit>
+      <onMenuIdle menuIndex="i">
+        <set duration="1"><animate type="nop"/></set>
+        <set duration=".25"><animate type="alpha" to=".3"/></set>
+      </onMenuIdle>
+      <onMenuScroll>
+        <set duration=".1"><animate type="alpha" to="1"/></set>
+      </onMenuScroll>	  
+	</item>
+    <item yOffset="400" alpha="0"/>
+  </menu>
+
+  <!-- shadow behind the selection wheel for better visibility -->  
+  <image src="images/shadow.png" height="1200" xOrigin="right" yOrigin="center" x="right" y="720" alpha="0.8" layer="10">
+    <onMenuIdle>
+	  <set duration="1"><animate type="nop"/></set>
+	  <set duration="0.1"><animate type="alpha" to="0"/></set>
+	</onMenuIdle>
+	<onMenuScroll>
+	  <set duration="0.1"><animate type="alpha" to="0.8"/></set>
+	</onMenuScroll>
+  </image>
+
+  <!-- front covers at the bottom -->
+  <menu type="custom" imageType="artwork_front_s" orientation="vertical" scrollTime=".30"  minScrollTime=".06" scrollAcceleration=".04" menuIndex="0" textFallback="no">
+    <itemDefaults spacing="2" y="1100" x="center" yOrigin="top" xOrigin="center" fontSize="35" width="200" minHeight="266" layer="6"/>
+	
+    <item alpha="0"/>
+	
+	<item layer="7">
+	  <onMenuExit>
+        <set duration="0.1"><animate type="alpha" to="0"/></set>
+      </onMenuExit>
+	</item>
+
+    <item xOffset="200">
+      <onMenuExit>
+        <set duration="0.1"><animate type="alpha" to="0"/></set>
+      </onMenuExit>
+	</item>
+	
+    <item xOffset="400">
+      <onMenuExit>
+        <set duration="0.1"><animate type="alpha" to="0"/></set>
+      </onMenuExit>
+	</item>
+
+    <item xOffset="600" alpha="0"/>
+	
+    <item alpha="0" selected="true"/>
+
+    <item xOffset="-200">
+      <onMenuExit>
+        <set duration="0.1"><animate type="alpha" to="0"/></set>
+      </onMenuExit>
+	</item>
+	
+    <item xOffset="-400">
+      <onMenuExit>
+        <set duration="0.1"><animate type="alpha" to="0"/></set>
+      </onMenuExit>
+	</item>
+
+    <item xOffset="-600" alpha="0"/>
+  </menu>  
+
+  <!-- Marquee -->
+  <reloadableImage type="marquee" alpha="1" height="225" width="835" layer="10"
+    transform="(0, 0), (835, 225); (215, 336), (425, 386), (209, 415), (425, 453)"/>
+
+  <!-- Cabinet -->
+  <reloadableImage type="cabinet" mode="commonlayout" y="300" layer="15"/>
+
+  <!-- favorite indicator -->
+  <reloadableImage type="isFavorite" mode="commonlayout" x="127" y="370" menuScrollReload="true" layer="16"/>  
+
+  <!-- front cover art as the background -->
+  <reloadableImage type="artwork_front" xOrigin="center" yOrigin="center" x="center" y="center" width="stretch" minHeight="stretch" alpha="1" layer="2"/>
+
+  <!-- preview video -->
+  <reloadableVideo imageType="screenshot" volume="0" alpha="0" xOrigin="center" yOrigin="center" x="200" y="150" height="300" maxWidth="400" layer="5"
+    transform="(0, 0), (400, 300); (155, 521), (332, 546), (179, 719), (364, 725); 50">
+    <onHighlightExit>        
+      <set duration="0.001">                
+        <animate type="volume" to="0" algorithm="easeinquadratic"/>  
+      </set>
+    </onHighlightExit> 
+
+    <onMenuIdle>        
+      <set duration="0.5">
+        <animate type="volume" to="0.6" algorithm="easeinquadratic"/>
+        <animate type="alpha" to="1" algorithm="easeinquadratic"/>
+      </set>
+    </onMenuIdle>
+  </reloadableVideo>
+
+  <image src="images/black.png" alpha="1" height="300" width="400" layer="4"
+    transform="(0, 0), (400, 300); (155, 521), (332, 546), (179, 719), (364, 725); 1"/>  
+
+  <!-- first letter -->
+  <reloadableImage type="firstLetter" mode="commonlayout" alpha="0" width="27" Height="540" x="720" yOrigin="center"  y="760" menuScrollReload="true" layer="17">
+    <onMenuIdle>
+      <set duration="1.2">
+        <animate type="alpha" to="0"/>
+        <animate type="xoffset" to="0"/>
+      </set>
+    </onMenuIdle>
+    <onMenuScroll>
+      <set duration="0.2">
+        <animate type="alpha" to="1"/>
+      </set>
+    </onMenuScroll>
+    <onMenuJumpEnter><set duration="0.001"><animate type="alpha" to="1"/></set></onMenuJumpEnter>
+    <onAttract><set duration="1.2"><animate type="xoffset" to="200"/></set></onAttract>
+  </reloadableImage>
+
+  <!-- gradient shadows at top/bottom edges -->
+  <image src="images/top_grad.png" width="stretch" height="400" layer="4">
+    <onMenuIdle>
+      <set duration="1.1">
+        <animate type="alpha" to="0.5"/>
+      </set>
+    </onMenuIdle>
+    <onMenuScroll>
+      <set duration="0.1">
+        <animate type="alpha" to="1"/>
+      </set>
+    </onMenuScroll>
+    <onMenuJumpEnter><set duration="0.001"><animate type="alpha" to="1"/></set></onMenuJumpEnter>    
+  </image>
+  <image src="images/bottom_grad.png" width="stretch" height="200" yOrigin="bottom" y="bottom" alpha="0.8" layer="17"/>
+
+  <reloadableText type="title" x="760" y="10" xOrigin="right" yOrigin="top" loadFontSize="42" fontSize="42" alpha="1" menuScrollReload="true" layer="17"/>
+  <reloadableText type="year" x="760" y="55" xOrigin="right" yOrigin="top" fontSize="36" layer="17"/>
+  
+  <!-- Playlist -->
+  <reloadableText type="playlist" textFormat="uppercase" x="10" y="1360" xOrigin="left" yOrigin="bottom" fontSize="36" layer="17"/>
+
+  <!-- collection index/size -->
+  <reloadableText type="collectionIndexSize" x="760" y="1360" xOrigin="right" yOrigin="bottom" fontSize="36" alpha="1" menuScrollReload="true" layer="17"/>
+</layout>

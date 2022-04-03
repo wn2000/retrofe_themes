@@ -1,0 +1,16 @@
+<layout width="768" height="1366" font="fonts/Geforce Light.ttf" loadFontSize="36" fontColor="ffffff">
+   <text value="Loading..." x="center" y="center" xOrigin="center" yOrigin="center" height="150" width="stretch" fontSize="72" layer="3">
+     <onIdle>
+       <set duration=".2">
+         <animate type="alpha" from="1" to=".5"/>
+       </set>
+       <set duration=".2">
+         <animate type="alpha" from=".5" to="1"/>
+       </set>
+     </onIdle>
+   </text>
+</layout>
+
+
+
+
